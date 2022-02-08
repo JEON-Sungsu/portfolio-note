@@ -1,0 +1,18 @@
+{
+  "devDependencies": {
+    "sass": "^1.49.7"
+  },
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  },
+  "name": "portfolio-note",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "sass": "node-sass -w  --source-map true style/main.scss ./style.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
