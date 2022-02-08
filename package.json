@@ -3,6 +3,7 @@
     "sass": "^1.49.7"
   },
   "dependencies": {
+    "gsap": "^3.9.1",
     "node-sass": "^7.0.1"
   },
   "name": "portfolio-note",

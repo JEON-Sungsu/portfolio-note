@@ -1,0 +1,25 @@
+%txt-base {
+  color: $font;
+  line-height: $text-basic-line-height;
+  letter-spacing: $text-basic-letter-spacing;
+}
+
+@mixin text-style-19 {
+  @extend %txt-base;
+  font-size: $text-basic;
+}
+
+@mixin text-style-24 {
+  @extend %txt-base;
+  font-size: $text-small;
+}
+
+@mixin text-style-26 {
+  @extend %txt-base;
+  font-size: $text-middle;
+}
+
+@mixin text-style-30 {
+  @extend %txt-base;
+  font-size: $text-big;
+}

@@ -1,0 +1,23 @@
+.btn-basic,
+.btn-project {
+  @include inline-flexbox;
+  @include text-style-19;
+  width: 110px;
+  height: 40px;
+  padding: 10px;
+  border: 2px solid $border;
+  border-radius: 8px;
+  transition: background-color 200ms ease-in-out, color 200ms ease-in-out;
+
+  &:hover {
+    background-color: $border;
+    color: #fff;
+  }
+}
+
+.btn-project {
+  border-color: #006c59;
+  &:hover {
+    background-color: #006c59;
+  }
+}

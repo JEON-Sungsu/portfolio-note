@@ -1,0 +1,16 @@
+body {
+  font-family: 'Sunflower', sans-serif;
+  font-size: 19px;
+  background-color: $main-background;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  max-height: 1080px;
+}
+
+main {
+  @include position-center;
+  width: 1440px;
+  height: 760px;
+  margin: 0 auto;
+}

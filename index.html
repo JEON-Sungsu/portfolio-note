@@ -4,9 +4,50 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:site_name" content="Howard's Portfolio" />
+    <meta property="og:description" content="웹퍼블리셔 전성수(하워드)의 웹 포트폴리오 입니다!" />
+    <meta property="og:image" content="./assets/images/howard-icon.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
     <title>Howard's Portfolio</title>
-    <link rel="stylesheet" href="./main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Sunflower:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
     <script defer src="./main.js"></script>
   </head>
-  <body></body>
+  <body>
+    <main class="first-page">
+      <section class="first-container">
+        <h1 class="visually-hidden">전성수(하워드)의 포트폴리오 입니다.</h1>
+        <div class="first-background">
+          <img src="./assets/images/first-bg_1.svg" alt="메인이미지" />
+        </div>
+        <div class="next-page-wrap">
+          <div class="next-page-nav">
+            <a href="./main.html">
+              <img src="./assets/images/click-here.svg" alt="페이지 이동 링크버튼입니다" />
+            </a>
+          </div>
+          <div class="nav-indicator">
+            <img src="./assets/images/clickhere_1.png" alt="여기를 클릭하세요" />
+          </div>
+        </div>
+
+        <div class="welcome-text">
+          <p class="text-typing" aria-label="Welcome to Howard's Portfolio!"></p>
+        </div>
+        <div class="welcome-character" aria-hidden>
+          <img src="./assets/images/main-howard-ver3.gif" alt="전성수 캐릭터 얼굴" />
+        </div>
+      </section>
+    </main>
+  </body>
 </html>

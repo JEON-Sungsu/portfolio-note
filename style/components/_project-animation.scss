@@ -1,0 +1,58 @@
+.project-show {
+  display: inline-block;
+  width: 150px;
+  height: 130px;
+  perspective: 600px;
+
+  &:hover {
+    .project-folder-front {
+      transform: rotateY(180deg);
+    }
+
+    .project-folder-back {
+      transform: rotateY(0deg);
+    }
+  }
+
+  .project-folder-front,
+  .project-folder-back {
+    width: 150px;
+    height: 130px;
+    backface-visibility: hidden;
+    transition: 1s;
+    position: absolute;
+
+    img {
+      @include position-center;
+    }
+  }
+
+  .project-folder-front {
+    transform: rotateY(0deg);
+
+    span {
+      @include position-center;
+      font-size: 16px;
+      font-weight: 700;
+    }
+  }
+
+  .project-folder-back {
+    transform: rotateY(-180deg);
+
+    span {
+      position: absolute;
+      z-index: 11;
+      top: 25px;
+      left: 30px;
+    }
+
+    a {
+      position: absolute;
+      width: 115px;
+      z-index: 12;
+      bottom: 15px;
+      left: 11px;
+    }
+  }
+}
