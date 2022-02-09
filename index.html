@@ -13,7 +13,7 @@
     <link rel="manifest" href="/site.webmanifest" />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
-    <title>Howard's Portfolio</title>
+    <title>Welcome!</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,6 +21,20 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./style.css" />
+    <script
+      defer
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"
+      integrity="sha256-eTyxS0rkjpLEo16uXTS0uVCS4815lc40K2iVpWDvdSY="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/text-writing.js"></script>
+    <script defer src="./js/first.js"></script>
     <script defer src="./main.js"></script>
   </head>
   <body>
@@ -32,7 +46,7 @@
         </div>
         <div class="next-page-wrap">
           <div class="next-page-nav">
-            <a href="./main.html">
+            <a class="next-move" href="./main.html" data-transition="flip">
               <img src="./assets/images/click-here.svg" alt="페이지 이동 링크버튼입니다" />
             </a>
           </div>

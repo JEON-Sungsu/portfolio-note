@@ -46,6 +46,15 @@
       @include text-style-26;
       font-weight: 700;
       color: $main-background;
+
+      &::after {
+        content: '';
+        border-right: 1px solid $black;
+        margin-left: 2px;
+        color: $font;
+        font-weight: 300;
+        animation: cursor 500ms ease-in-out infinite;
+      }
     }
   }
 
@@ -55,5 +64,11 @@
       width: 250px;
       height: 250px;
     }
+  }
+}
+
+@keyframes cursor {
+  50% {
+    border-right-color: transparent;
   }
 }

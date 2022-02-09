@@ -1,0 +1,57 @@
+.global-gnb {
+  @include position-center-x;
+  margin-top: 30px;
+
+  .gnb-list {
+    @include flexbox(between);
+  }
+
+  .gnb-item {
+    @include inline-flexbox;
+    font-weight: 300;
+    width: 120px;
+    height: 54px;
+    margin-right: 15px;
+    white-space: nowrap;
+
+    &.is-active {
+      a {
+        font-weight: 700;
+        border: 2px solid red;
+      }
+    }
+
+    &:hover {
+      a {
+        font-size: 26px;
+      }
+      img {
+        transform: scale(1.1);
+      }
+    }
+
+    &:active {
+      a {
+        opacity: 0.4;
+      }
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    a {
+      @include text-style-24;
+      display: block;
+      padding: 15px;
+    }
+
+    &.gnb-main {
+      img {
+        display: block;
+        width: 60px;
+        height: 60px;
+      }
+    }
+  }
+}
