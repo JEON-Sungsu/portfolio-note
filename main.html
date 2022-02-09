@@ -17,32 +17,95 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./style.css" />
-    <script defer src="./main.js"></script>
+    <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script defer src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <script defer src="js/draggable.js"></script>
   </head>
   <body>
     <header class="global-gnb">
       <nav class="gnb-nav">
         <h1 class="visually-hidden">global-navigation</h1>
         <ul class="gnb-list">
-          <li class="gnb-item is-active">
-            <a href="#">Profile</a>
+          <li class="gnb-item">
+            <a href="./profile.html">Profile</a>
           </li>
           <li class="gnb-item">
-            <a href="#">Projects</a>
+            <a href="./project.html">Projects</a>
           </li>
           <li class="gnb-item gnb-main">
-            <a href="#">
+            <a class="main-howard" href="./main.html">
               <img src="./assets/images/howard-icon.png" alt="메인화면으로 이동" />
             </a>
           </li>
           <li class="gnb-item">
-            <a href="#">Who am I</a>
+            <a href="./who.html">Who am I</a>
           </li>
           <li class="gnb-item">
-            <a href="#">Contact</a>
+            <a href="./contact.html">Contact</a>
           </li>
         </ul>
       </nav>
     </header>
+
+    <main class="main-content-wrap">
+      <section class="main-content">
+        <h1 class="visually-hidden">메인 컨텐츠입니다.</h1>
+        <div class="main-background">
+          <img src="./assets/images/bg-home.svg" alt="메인 배경이미지">
+        </div> 
+        <div class="index">
+          <img src="./assets/images/index-home.svg" alt="home" aria-hidden />
+          <span>HOME</span>
+        </div>
+        <div class="main-content-draggable">
+          <div class="draggable-wrap sticky-01">
+            <div class="draggable">
+              <img src="./assets/images/sticky-01.png" alt="전성수 스펙" />
+              <h3 class="sticky-01-title">
+                <a href="./profile.html">Profile</a>
+              </h3>
+              <dl class="draggable-list">
+                <div class="draggable-item">
+                  <div class="data-wrap">
+                    <dt>이름</dt>
+                    <dd>전성수</dd>
+                  </div>
+                  <div class="data-wrap">
+                    <dt>나이</dt>
+                    <dd>1989.05.30</dd>
+                  </div>
+                  <div class="data-wrap">
+                    <dt>취미</dt>
+                    <dd>인터넷 웹 소설 읽기</dd>
+                  </div>
+                  <div class="data-wrap">
+                    <dt>장점</dt>
+                    <dd>다양한 소통경험, 향상심</br>궁금한걸 못참음, 책임감</dd>
+                  </div>
+                </div>
+              </dl>
+            </div>
+          </div>
+
+          <div class="draggable-wrap sticky-02">
+            <div class="draggable">
+              <img src="./assets/images/sticky-02.png" alt="전성수 프로젝트" />
+            </div>
+          </div>
+
+          <div class="draggable-wrap sticky-03">
+            <div class="draggable">
+              <img src="./assets/images/sticky-03.png" alt="전성수 프로필" />
+            </div>
+          </div>
+
+          <div class="draggable-wrap sticky-04">
+            <div class="draggable">
+              <img src="./assets/images/sticky-04.png" alt="전성수 연락처" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

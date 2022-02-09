@@ -1,0 +1,24 @@
+.draggable-wrap {
+  position: absolute;
+  cursor: move;
+
+  &.sticky-01 {
+    top: 40px;
+    left: 170px;
+  }
+
+  &.sticky-02 {
+    bottom: 80px;
+    right: 130px;
+  }
+
+  &.sticky-03 {
+    bottom: 80px;
+    left: 200px;
+  }
+
+  &.sticky-04 {
+    top: 40px;
+    right: 300px;
+  }
+}

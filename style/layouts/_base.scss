@@ -10,7 +10,7 @@ body {
 
 main {
   @include position-center;
+  margin-top: 50px;
   width: 1440px;
   height: 760px;
-  margin: 0 auto;
 }

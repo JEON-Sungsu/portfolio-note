@@ -10,14 +10,14 @@
     @include inline-flexbox;
     font-weight: 300;
     width: 120px;
-    height: 54px;
+    height: 75px;
     margin-right: 15px;
     white-space: nowrap;
+    overflow: hidden;
 
     &.is-active {
-      a {
-        font-weight: 700;
-        border: 2px solid red;
+      a::after {
+        border-bottom: 10px solid rgba(0, 255, 0, 0.3);
       }
     }
 
@@ -26,14 +26,16 @@
         font-size: 26px;
       }
       img {
-        transform: scale(1.1);
+        transform: scale(1.2);
+      }
+
+      a::after {
+        border-bottom-color: rgba(0, 255, 0, 0.3);
       }
     }
 
-    &:active {
-      a {
-        opacity: 0.4;
-      }
+    &:active a {
+      opacity: 0.4;
     }
 
     &:last-child {
@@ -41,16 +43,34 @@
     }
 
     a {
+      position: relative;
       @include text-style-24;
+      font-weight: 700;
       display: block;
-      padding: 15px;
+      transition: font-size 250ms ease-in-out;
+    }
+
+    a::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 30px;
+      border-bottom: 10px solid transparent;
+      transition: border-bottom-color 250ms ease-in-out;
     }
 
     &.gnb-main {
+      a::after {
+        content: none;
+      }
+
       img {
         display: block;
         width: 60px;
         height: 60px;
+        transition: transform 250ms ease-in-out;
       }
     }
   }

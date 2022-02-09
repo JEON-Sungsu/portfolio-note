@@ -9,3 +9,21 @@
   white-space: nowrap !important;
   border: 0 !important;
 }
+
+.index {
+  position: absolute;
+  top: 0;
+  left: 30px;
+  z-index: 13;
+  img {
+    display: block;
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.main-background {
+  img {
+    -webkit-user-drag: none;
+  }
+}

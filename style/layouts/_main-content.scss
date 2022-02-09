@@ -1,0 +1,72 @@
+.main-content-wrap {
+  overflow: hidden;
+
+  .index span {
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    font-weight: 700;
+  }
+
+  .sticky-01-title {
+    @include position-center-x;
+    top: 5px;
+    margin-left: -3px;
+
+    &:active {
+      a {
+        opacity: 0.5;
+      }
+    }
+
+    &:hover {
+      a {
+        font-weight: 700;
+      }
+    }
+
+    a {
+      display: block;
+      font-size: 19px;
+      padding: 10px 20px;
+      transition: opacity 200ms ease-in-out, font-weight 200ms ease-in-out;
+    }
+  }
+
+  .draggable-list {
+    position: absolute;
+    top: 60px;
+    left: 20px;
+
+    .draggable-item {
+      @include flexbox(start, start);
+      flex-direction: column;
+
+      .data-wrap {
+        @include flexbox(start);
+
+        &:nth-child(4) {
+          dt {
+            padding-bottom: 30px;
+          }
+        }
+
+        dt {
+          margin-right: 15px;
+
+          &::after {
+            content: ':';
+            margin-left: 5px;
+          }
+        }
+
+        dt,
+        dd {
+          font-size: 19px;
+          line-height: 1.6;
+          letter-spacing: 0.01em;
+        }
+      }
+    }
+  }
+}
