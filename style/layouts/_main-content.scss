@@ -1,6 +1,5 @@
 .main-content-wrap {
   overflow: hidden;
-
   .index span {
     position: absolute;
     top: 25px;
@@ -8,10 +7,12 @@
     font-weight: 700;
   }
 
-  .sticky-01-title {
+  .sticky-01-title,
+  .sticky-02-title,
+  .sticky-03-title,
+  .sticky-04-title {
+    z-index: $main-drag-title;
     @include position-center-x;
-    top: 5px;
-    margin-left: -3px;
 
     &:active {
       a {
@@ -26,10 +27,43 @@
     }
 
     a {
-      display: block;
+      @include inline-flexbox;
+      white-space: nowrap;
       font-size: 19px;
       padding: 10px 20px;
-      transition: opacity 200ms ease-in-out, font-weight 200ms ease-in-out;
+      transition: opacity 300ms ease-in-out, font-weight 300ms ease-in-out;
+    }
+  }
+
+  .sticky-01-title {
+    top: 5px;
+    margin-left: -3px;
+  }
+
+  .sticky-02-title {
+    top: 35px;
+  }
+
+  .sticky-03-title {
+    bottom: 55px;
+    transform: translateX(-50%) rotate(-8deg);
+  }
+
+  .sticky-04-title {
+    top: 40px;
+  }
+
+  .sticky-04-img {
+    @include position-center-x;
+    bottom: -20px;
+    margin-left: -2px;
+    width: 180px;
+    height: 180px;
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
     }
   }
 
@@ -66,6 +100,31 @@
           line-height: 1.6;
           letter-spacing: 0.01em;
         }
+      }
+    }
+
+    &.projects {
+      top: 70px;
+      left: 50px;
+    }
+  }
+
+  .sticky-03 {
+    &-icongroup {
+      @include flexbox;
+      position: absolute;
+      right: 15px;
+      bottom: 50px;
+      transform: rotate(-8deg);
+
+      div {
+        @include inline-flexbox;
+        margin-right: 5px;
+      }
+
+      img {
+        width: 20px;
+        height: 20px;
       }
     }
   }

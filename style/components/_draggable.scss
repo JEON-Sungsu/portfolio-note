@@ -21,4 +21,29 @@
     top: 40px;
     right: 300px;
   }
+
+  &.sticky-05 {
+    bottom: 250px;
+    left: 50px;
+  }
+
+  &.sticky-06 {
+    bottom: 50px;
+    right: 400px;
+
+    img {
+      width: 60px;
+      height: auto;
+    }
+  }
+
+  &.sticky-07 {
+    right: 80px;
+    bottom: 350px;
+
+    img {
+      width: 60px;
+      height: auto;
+    }
+  }
 }
