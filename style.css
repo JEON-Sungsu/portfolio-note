@@ -689,7 +689,7 @@ template {
   50% {
     border-right-color: transparent; } }
 
-body {
+body:not(.popup) {
   font-family: 'Sunflower', sans-serif;
   font-size: 19px;
   background-color: #fcf0c9;

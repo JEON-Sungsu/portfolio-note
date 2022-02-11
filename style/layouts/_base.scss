@@ -1,4 +1,4 @@
-body {
+body:not(.popup) {
   font-family: 'Sunflower', sans-serif;
   font-size: 19px;
   background-color: $main-background;
