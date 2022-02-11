@@ -1,8 +1,9 @@
 .profile-content {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
+  /* LEFT SIDE */
+  .left-side,
+  .right-side {
+    opacity: 0;
+  }
 
   .slide-wrap {
     @include position-center-x;
@@ -81,6 +82,35 @@
         dt {
           padding-bottom: 24px;
         }
+      }
+    }
+  }
+
+  /* RIGHT-Side */
+  .right-side {
+    .skill-list {
+      @include flexbox(start, start);
+      flex-direction: column;
+      margin-top: 30px;
+    }
+
+    .skill-items {
+      @include flexbox(start);
+      padding: 20px 80px;
+
+      dt {
+        flex-shrink: 0;
+        margin-right: 30px;
+        img {
+          width: 60px;
+          height: auto;
+        }
+      }
+
+      dd {
+        @include text-style-19;
+        flex-grow: 1;
+        line-height: 1.3;
       }
     }
   }
