@@ -10,11 +10,3 @@ var slider = tns({
   mouseDrag: true,
   preventScrollOnTouch: true,
 })
-
-const fadeEls = document.querySelectorAll('.fade-in')
-fadeEls.forEach(function (fadeEl, index) {
-  gsap.to(fadeEl, 1, {
-    delay: (index + 1) * 0.7, //0.7, 1.4, 2.1, 2.7
-    opacity: 1,
-  })
-})
