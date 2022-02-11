@@ -8,7 +8,7 @@ body {
   max-height: 1080px;
 }
 
-main {
+main:not(.detail-project) {
   @include position-center;
   margin-top: 50px;
   width: 1440px;

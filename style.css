@@ -492,9 +492,9 @@ template {
   display: none; }
 
 .btn-basic,
-.btn-project, .first-container .welcome-text .text-typing, .global-gnb .gnb-item a, .profile-content .text-wrap .text-items, .profile-content .right-side .skill-items dd {
+.btn-project, .first-container .welcome-text .text-typing, .global-gnb .gnb-item a, .profile-content .text-wrap .text-items, .profile-content .right-side .skill-items dd, .detail-project .title, .detail-project .project-content .content-header .header-title .lang-items, .detail-project .project-content .content-descriptions p {
   color: #191a20;
-  line-height: 1;
+  line-height: 1.3;
   letter-spacing: 0.01em; }
 
 .btn-basic,
@@ -505,7 +505,6 @@ template {
   font-size: 19px;
   width: 110px;
   height: 40px;
-  padding: 10px;
   border: 2px solid #8c8d96;
   border-radius: 8px;
   transition: background-color 200ms ease-in-out, color 200ms ease-in-out; }
@@ -518,6 +517,8 @@ template {
   border-color: #006c59; }
   .btn-project:hover {
     background-color: #006c59; }
+  .btn-project a {
+    padding: 10px 25px; }
 
 .hi-yellow {
   background: linear-gradient(to top, rgba(255, 255, 143, 0.5) 50%, transparent 50%); }
@@ -607,6 +608,14 @@ template {
       width: 60px;
       height: auto; }
 
+.kakao .kakao-logo img {
+  width: 100px;
+  height: 100px; }
+
+.biff .biff-logo img {
+  width: 80px;
+  height: 80px; }
+
 .first-container .first-background img {
   position: absolute;
   top: 50%;
@@ -678,7 +687,7 @@ body {
   height: 100vh;
   max-height: 1080px; }
 
-main {
+main:not(.detail-project) {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -946,5 +955,73 @@ main {
       font-size: 19px;
       flex-grow: 1;
       line-height: 1.3; }
+
+.projects-header .index span {
+  left: 15px; }
+
+.projects .left-side {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0; }
+  .projects .left-side .projects-line-01,
+  .projects .left-side .projects-line-02 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%; }
+  .projects .left-side .project-folder-back .title-01 {
+    left: 15px; }
+  .projects .left-side .project-folder-back .title-04 {
+    left: 9px; }
+
+.detail-project {
+  width: 100%;
+  height: 100%;
+  padding: 80px 70px 30px 70px;
+  background-image: url("./assets/images/project-background.png"); }
+  .detail-project header {
+    margin-bottom: 30px; }
+  .detail-project .logo,
+  .detail-project .title {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .detail-project .logo {
+    margin-bottom: 20px; }
+  .detail-project .title {
+    font-size: 30px; }
+  .detail-project .project-content {
+    padding: 0 30px; }
+    .detail-project .project-content .content-header {
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-end;
+      margin-bottom: 30px; }
+      .detail-project .project-content .content-header .header-title h3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px; }
+      .detail-project .project-content .content-header .header-title .list-wrap {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center; }
+      .detail-project .project-content .content-header .header-title .lang-list-left {
+        margin-right: 50px; }
+      .detail-project .project-content .content-header .header-title .lang-items {
+        font-size: 19px;
+        margin-bottom: 5px; }
+      .detail-project .project-content .content-header .btn-group {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; }
+        .detail-project .project-content .content-header .btn-group .btn-project:first-child {
+          margin-bottom: 15px; }
+    .detail-project .project-content .content-descriptions p {
+      font-size: 19px;
+      margin-bottom: 20px; }
 
 /*# sourceMappingURL=style.css.map */

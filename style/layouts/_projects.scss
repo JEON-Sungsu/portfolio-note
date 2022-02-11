@@ -1,0 +1,28 @@
+.projects {
+  &-header {
+    .index span {
+      left: 15px;
+    }
+  }
+
+  .left-side {
+    @include flexbox(around);
+    flex-direction: column;
+    opacity: 0;
+
+    .projects-line-01,
+    .projects-line-02 {
+      @include flexbox(around);
+      width: 100%;
+    }
+
+    .project-folder-back {
+      .title-01 {
+        left: 15px;
+      }
+      .title-04 {
+        left: 9px;
+      }
+    }
+  }
+}

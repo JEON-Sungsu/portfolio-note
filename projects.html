@@ -9,7 +9,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
-    <title>Howard's Portfolio</title>
+    <title>Howard's Projects!</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,9 +17,15 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"
+      integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script defer src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
-    <script defer src="./js/draggable.js"></script>
+    <script defer src="./js/open-popup.js"></script>
     <script defer src="./main.js"></script>
   </head>
   <body>
@@ -59,7 +65,60 @@
           <span>Projects</span>
         </div>
       </header>
-      <section class="projects-content"></section>
+      <section class="projects-content">
+        <div class="left-side fade-in">
+          <div class="projects-line-01">
+            <div class="project-show">
+              <div class="project-folder-front">
+                <img src="./assets/images/folder.png" alt="project-folder" />
+                <span>Project-01</span>
+              </div>
+              <div class="project-folder-back">
+                <span class="title-01">카카오 모바일</span>
+                <a href="#none" onclick="openPopupFirst()" class="btn-basic">상세보기</a>
+                <img src="./assets/images/folder-open.png" alt="project-folder" />
+              </div>
+            </div>
+            <div class="project-show">
+              <div class="project-folder-front">
+                <img src="./assets/images/folder.png" alt="project-folder" />
+                <span>Project-02</span>
+              </div>
+              <div class="project-folder-back">
+                <span class="title-02">스타벅스</span>
+                <a href="#none" onclick="openPopupSecond()" class="btn-basic">상세보기</a>
+                <img src="./assets/images/folder-open.png" alt="project-folder" />
+              </div>
+            </div>
+          </div>
+          <div class="projects-line-02">
+            <div class="project-show">
+              <div class="project-folder-front">
+                <img src="./assets/images/folder.png" alt="project-folder" />
+                <span>Project-03</span>
+              </div>
+              <div class="project-folder-back">
+                <span class="title-03">오늘의 집</span>
+                <a href="#none" onclick="openPopupThird()" class="btn-basic">상세보기</a>
+                <img src="./assets/images/folder-open.png" alt="project-folder" />
+              </div>
+            </div>
+            <div class="project-show">
+              <div class="project-folder-front">
+                <img src="./assets/images/folder.png" alt="project-folder" />
+                <span>Project-04</span>
+              </div>
+              <div class="project-folder-back">
+                <span class="title-04">부산국제영화제</span>
+                <a href="#none" onclick="openPopupFourth()" class="btn-basic">상세보기</a>
+                <img src="./assets/images/folder-open.png" alt="project-folder" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="right-side"></div>
+      </section>
     </main>
   </body>
 </html>
