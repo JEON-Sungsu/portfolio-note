@@ -3,14 +3,13 @@ body {
   font-size: 19px;
   background-color: $main-background;
   position: relative;
-  width: 100vw;
-  height: 100vh;
+  width: 1920px;
+  height: 1080px;
   max-height: 1080px;
 }
 
 main:not(.detail-project) {
   @include position-center;
-  margin-top: 50px;
   width: 1440px;
   height: 760px;
 }
