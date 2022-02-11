@@ -1,5 +1,12 @@
 .main {
   overflow: hidden;
+
+  .sticky-05,
+  .sticky-06,
+  .sticky-07 {
+    opacity: 0;
+  }
+
   .sticky-01-title,
   .sticky-02-title,
   .sticky-03-title,

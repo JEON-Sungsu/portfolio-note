@@ -493,7 +493,7 @@ template {
 
 .btn-basic,
 .btn-project, .first-container .welcome-text .text-typing, .global-gnb .gnb-item a, .profile-content .text-wrap .text-items, .profile-content .right-side .skill-items dd, .detail-project .title, .detail-project .project-content .content-header .header-title .lang-items, .detail-project .project-content .content-descriptions p {
-  color: #191a20;
+  color: #000;
   line-height: 1.3;
   letter-spacing: 0.01em; }
 
@@ -582,16 +582,24 @@ template {
   cursor: move; }
   .draggable-wrap.sticky-01 {
     top: 40px;
-    left: 170px; }
+    left: 170px;
+    transform: translateX(-100%);
+    opacity: 0; }
   .draggable-wrap.sticky-02 {
     bottom: 80px;
-    right: 130px; }
+    right: 130px;
+    transform: translateX(100%);
+    opacity: 0; }
   .draggable-wrap.sticky-03 {
     bottom: 80px;
-    left: 200px; }
+    left: 200px;
+    transform: translateY(100%);
+    opacity: 0; }
   .draggable-wrap.sticky-04 {
     top: 40px;
-    right: 300px; }
+    right: 300px;
+    transform: translateY(-100%);
+    opacity: 0; }
   .draggable-wrap.sticky-05 {
     bottom: 250px;
     left: 50px; }
@@ -607,6 +615,9 @@ template {
     .draggable-wrap.sticky-07 img {
       width: 60px;
       height: auto; }
+  .draggable-wrap.show {
+    opacity: 1;
+    transform: translate(0); }
 
 .kakao .kakao-logo img {
   width: 100px;
@@ -772,6 +783,10 @@ main:not(.detail-project) {
 
 .main {
   overflow: hidden; }
+  .main .sticky-05,
+  .main .sticky-06,
+  .main .sticky-07 {
+    opacity: 0; }
   .main .sticky-01-title,
   .main .sticky-02-title,
   .main .sticky-03-title,
