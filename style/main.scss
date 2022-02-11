@@ -5,6 +5,7 @@
 @import './base/reset';
 @import './base/fonts';
 @import './base/global';
+@import './base/normalize';
 
 @import './mixins/flexbox';
 @import './mixins/positions';
@@ -20,3 +21,4 @@
 @import './layouts/base';
 @import './layouts/global-gnb';
 @import './layouts/main-content';
+@import './layouts/profile';

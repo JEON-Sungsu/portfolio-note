@@ -1,0 +1,87 @@
+.profile-content {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
+  .slide-wrap {
+    @include position-center-x;
+    top: 80px;
+    background-color: #fff;
+    width: 300px;
+    height: 350px;
+    overflow: hidden;
+    box-shadow: 5px 5px 10px #c7c7c7;
+  }
+
+  .img-slide {
+    &-item {
+      @include flexbox;
+      width: 280px;
+      height: 300px;
+      padding: 20px 30px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .slide-nav {
+    @include flexbox;
+    &-buttons {
+      background-color: $main-background;
+      margin-right: 5px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      cursor: pointer;
+
+      &.tns-nav-active {
+        border: 1px solid #9c6c4b;
+      }
+    }
+  }
+
+  .text-wrap {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    padding: 0 70px;
+
+    .text-list {
+      @include flexbox(start, start);
+      flex-direction: column;
+    }
+
+    .text-items {
+      @include flexbox(start);
+      @include text-style-19;
+      line-height: 1.3;
+      margin-bottom: 20px;
+
+      dt {
+        width: 200px;
+        flex-shrink: 0;
+      }
+      dd {
+        flex-grow: 1;
+      }
+
+      &:nth-child(2) {
+        dt {
+          padding-bottom: 49px;
+        }
+      }
+
+      &:nth-child(3),
+      &:nth-child(4) {
+        dt {
+          padding-bottom: 24px;
+        }
+      }
+    }
+  }
+}

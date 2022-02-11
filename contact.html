@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Howard's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Sunflower:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script defer src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <script defer src="./js/draggable.js"></script>
+    <script defer src="./main.js"></script>
+  </head>
+  <body>
+    <header class="global-gnb">
+      <nav class="gnb-nav">
+        <h1 class="visually-hidden">global-navigation</h1>
+        <ul class="gnb-list">
+          <li class="gnb-item">
+            <a href="./profile.html">Profile</a>
+          </li>
+          <li class="gnb-item">
+            <a href="./projects.html">Projects</a>
+          </li>
+          <li class="gnb-item gnb-main">
+            <a class="main-howard" href="./main.html">
+              <img src="./assets/images/howard-icon.png" alt="메인화면으로 이동" />
+            </a>
+          </li>
+          <li class="gnb-item">
+            <a href="./who.html">Who am I</a>
+          </li>
+          <li class="gnb-item is-active">
+            <a href="./contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="contact">
+      <header class="contact-header">
+        <h1 class="visually-hidden">전성수 컨택 페이지 입니다.</h1>
+        <div class="main-background">
+          <img src="./assets/images/contact-bg.png" alt="컨택 배경이미지" />
+        </div>
+        <div class="index">
+          <img src="./assets/images/index-contact.svg" alt="home" aria-hidden />
+          <span>Contact</span>
+        </div>
+      </header>
+      <section class="contact-content"></section>
+    </main>
+  </body>
+</html>

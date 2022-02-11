@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Howard's Profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Sunflower:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script defer src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script defer src="./js/profile.js"></script>
+    <script defer src="./main.js"></script>
+  </head>
+  <body>
+    <header class="global-gnb">
+      <nav class="gnb-nav">
+        <h1 class="visually-hidden">global-navigation</h1>
+        <ul class="gnb-list">
+          <li class="gnb-item is-active">
+            <a href="./profile.html">Profile</a>
+          </li>
+          <li class="gnb-item">
+            <a href="./projects.html">Projects</a>
+          </li>
+          <li class="gnb-item gnb-main">
+            <a class="main-howard" href="./main.html">
+              <img src="./assets/images/howard-icon.png" alt="메인화면으로 이동" />
+            </a>
+          </li>
+          <li class="gnb-item">
+            <a href="./who.html">Who am I</a>
+          </li>
+          <li class="gnb-item">
+            <a href="./contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="profile">
+      <header class="profile-header">
+        <h1 class="visually-hidden">전성수 프로필 페이지 입니다.</h1>
+        <div class="main-background">
+          <img src="./assets/images/profile-bg.png" alt="프로필 배경이미지" />
+        </div>
+        <div class="index">
+          <img src="./assets/images/index-profile.svg" alt="home" aria-hidden />
+          <span>Profile</span>
+        </div>
+      </header>
+
+      <div class="profile-content">
+        <div class="left-side">
+          <div class="slide-wrap">
+            <ul class="img-slide">
+              <li class="img-slide-item">
+                <img src="./assets/images/HOWARD_01.jpeg" alt="" />
+              </li>
+              <li class="img-slide-item">
+                <img src="./assets/images/HOWARD_02.jpeg" alt="" />
+              </li>
+              <li class="img-slide-item">
+                <img src="./assets/images/HOWARD_03.jpeg" alt="" />
+              </li>
+              <li class="img-slide-item">
+                <img src="./assets/images/HOWARD_04.jpeg" alt="" />
+              </li>
+            </ul>
+
+            <div class="slide-nav">
+              <div class="slide-nav-buttons"></div>
+              <div class="slide-nav-buttons"></div>
+              <div class="slide-nav-buttons"></div>
+              <div class="slide-nav-buttons"></div>
+            </div>
+          </div>
+
+          <div class="text-wrap">
+            <dl class="text-list">
+              <div class="text-items">
+                <dt>이름</dt>
+                <dd>전성수 (Howard JEON)</dd>
+              </div>
+              <div class="text-items">
+                <dt>스스로 생각하는 강점</dt>
+                <dd>
+                  <span class="hi-green">
+                    여러 사람과의 소통경험이 많다, 책임감이 뛰어나다, 발전하고자 하는 욕구가 강하다, 모르는것은 확실히 알고
+                    넘어간다.
+                  </span>
+                </dd>
+              </div>
+              <div class="text-items">
+                <dt>퍼블리셔로써의 지향점</dt>
+                <dd>누구나 어려움 없이 사용 할 수 있는 웹 페이지 제작을 지향한다.</dd>
+              </div>
+              <div class="text-items">
+                <dt>포부</dt>
+                <dd>
+                  퍼블리셔를 시작으로 프론트엔드,백엔드를 거쳐 <span class="hi-green">풀스택 개발자</span>가 되는것이 목표이다.
+                </dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+
+        <div class="right-side"></div>
+      </div>
+    </main>
+  </body>
+</html>

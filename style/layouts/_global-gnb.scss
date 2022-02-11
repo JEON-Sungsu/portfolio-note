@@ -8,10 +8,9 @@
 
   .gnb-item {
     @include inline-flexbox;
-    font-weight: 300;
     width: 120px;
     height: 75px;
-    margin-right: 15px;
+    margin-right: 35px;
     white-space: nowrap;
     overflow: hidden;
 
@@ -23,7 +22,7 @@
 
     &:hover {
       a {
-        font-size: 26px;
+        font-size: 24px;
       }
       img {
         transform: scale(1.2);
@@ -44,8 +43,9 @@
 
     a {
       position: relative;
-      @include text-style-24;
+      @include text-style-19;
       font-weight: 700;
+      text-transform: uppercase;
       display: block;
       transition: font-size 250ms ease-in-out;
     }
