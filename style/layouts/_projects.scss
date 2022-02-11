@@ -8,7 +8,6 @@
   .left-side {
     @include flexbox(around);
     flex-direction: column;
-    opacity: 0;
 
     .projects-line-01,
     .projects-line-02 {
@@ -23,6 +22,26 @@
       .title-04 {
         left: 9px;
       }
+    }
+
+    .project-01 {
+      transform: translate(180px, 160px);
+      opacity: 0;
+    }
+
+    .project-02 {
+      transform: translate(-180px, 160px);
+      opacity: 0;
+    }
+
+    .project-03 {
+      transform: translate(180px, -220px);
+      opacity: 0;
+    }
+
+    .project-04 {
+      transform: translate(-180px, -220px);
+      opacity: 0;
     }
   }
 }

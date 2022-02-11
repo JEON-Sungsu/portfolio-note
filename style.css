@@ -978,8 +978,7 @@ main:not(.detail-project) {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-direction: column;
-  opacity: 0; }
+  flex-direction: column; }
   .projects .left-side .projects-line-01,
   .projects .left-side .projects-line-02 {
     display: flex;
@@ -990,6 +989,18 @@ main:not(.detail-project) {
     left: 15px; }
   .projects .left-side .project-folder-back .title-04 {
     left: 9px; }
+  .projects .left-side .project-01 {
+    transform: translate(180px, 160px);
+    opacity: 0; }
+  .projects .left-side .project-02 {
+    transform: translate(-180px, 160px);
+    opacity: 0; }
+  .projects .left-side .project-03 {
+    transform: translate(180px, -220px);
+    opacity: 0; }
+  .projects .left-side .project-04 {
+    transform: translate(-180px, -220px);
+    opacity: 0; }
 
 .detail-project {
   width: 100%;
