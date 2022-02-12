@@ -9,7 +9,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
-    <title>Howard's Portfolio</title>
+    <title>Self-Introduce</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,9 +17,21 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"
+      integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollToPlugin.min.js"
+      integrity="sha512-1OG9UO4krPizjtz/c9iDbjCqtXznBYdJeD4ccPaYfJHzC6F1qoQ3P1bgQ3J8lgCoK5qGVCqsY4+/RKjLDzITVQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script defer src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
-    <script defer src="./js/draggable.js"></script>
+    <script defer src="js/who.js"></script>
     <script defer src="./main.js"></script>
   </head>
   <body>
@@ -56,10 +68,47 @@
         </div>
         <div class="index">
           <img src="./assets/images/index-who.svg" alt="home" aria-hidden />
-          <span>Who am I</span>
+          <span>I am ..</span>
         </div>
       </header>
-      <section class="who-content"></section>
+      <section class="who-content content-area">
+        <div class="left-side spin-elements">
+          <h3 class="coworker-title">동료들의 평가</h3>
+          <dl class="coworker-list">
+            <div class="coworker-items">
+              <dt>부국제 정보화 팀장</dt>
+              <dd>
+                2년간 지켜 보았는데, 무엇보다 팀원들과의 캐미가 좋았다.
+                <span class="hi-pink"> 사람들을 잘 다독이고, 얘기를 잘 들어주어 팀내 분위기를 편안하게 해주었다. </span> 덕분에
+                팀장으로써 나의 부담이 많이 줄었다.
+              </dd>
+            </div>
+
+            <div class="coworker-items">
+              <dt>부국제 총무팀장</dt>
+              <dd>
+                왜? 어떻게? 라는 질문을 참 많이하는 친구였다. 귀찮은 경우가 많았지만, 그래도 덕분에 일처리 하나는 확실했다.
+                <span class="hi-pink"> 본인이 맡은일은 책임감을 가지고 어떻게든 완수 </span>하려고 노력한다.
+              </dd>
+            </div>
+
+            <div class="coworker-items">
+              <dt>전주 기술팀장</dt>
+              <dd>
+                업무 시간을 잘 사용한다. 시간 내에 모든 업무를 처리하고, 효율적으로 일해서 보기 좋았다. 그리고 직무상 굉장히 많은
+                감독 및 관계자와 <span class="hi-pink">소통을 해야 하는데, 이 부분에서 뛰어난 능력을 보였다.</span>
+              </dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="right-side spin-elements">
+          <h3 class="career-title">경력</h3>
+          <div class="career-image">
+            <img src="./assets/images/career.png" alt="주요 경력 표" />
+          </div>
+        </div>
+      </section>
     </main>
   </body>
 </html>

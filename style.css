@@ -492,7 +492,8 @@ template {
   display: none; }
 
 .btn-basic,
-.btn-project, .first-container .welcome-text .text-typing, .global-gnb .gnb-item a, .profile-content .text-wrap .text-items, .profile-content .right-side .skill-items dd, .detail-project .title, .detail-project .project-content .content-header .header-title .lang-items, .detail-project .project-content .content-descriptions p {
+.btn-project, .first-container .welcome-text .text-typing, .global-gnb .gnb-item a, .profile-content .text-wrap .text-items, .profile-content .right-side .skill-items dd, .detail-project .title, .detail-project .project-content .content-header .header-title .lang-items, .detail-project .project-content .content-descriptions p, .who .coworker-title,
+.who .career-title, .who .coworker-list .coworker-items {
   color: #000;
   line-height: 1.3;
   letter-spacing: 0.01em; }
@@ -545,7 +546,7 @@ template {
   .project-show .project-folder-back {
     width: 150px;
     height: 130px;
-    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
     transition: 1s;
     position: absolute; }
     .project-show .project-folder-front img,
@@ -694,6 +695,7 @@ body:not(.popup) {
   font-size: 19px;
   background-color: #fcf0c9;
   position: relative;
+  margin: 0 auto;
   width: 1920px;
   height: 1080px;
   max-height: 1080px; }
@@ -1048,5 +1050,48 @@ main:not(.detail-project) {
     .detail-project .project-content .content-descriptions p {
       font-size: 19px;
       margin-bottom: 20px; }
+
+.who .index span {
+  left: 25px; }
+
+.who .left-side {
+  padding: 50px 70px; }
+
+.who .right-side {
+  padding: 50px 80px; }
+
+.who .coworker-title,
+.who .career-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  margin-bottom: 40px; }
+
+.who .career-title {
+  margin-left: -80px; }
+
+.who .coworker-list .coworker-items {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 19px;
+  line-height: 1.5;
+  margin-bottom: 60px; }
+  .who .coworker-list .coworker-items:last-child {
+    margin-bottom: 0; }
+  .who .coworker-list .coworker-items dt {
+    flex-shrink: 0;
+    margin-right: 15px;
+    width: 170px;
+    padding-bottom: 85px; }
+
+.who .career-image img {
+  display: block;
+  padding-left: 30px; }
+
+.who .spin-elements {
+  transform: rotatey(180deg);
+  -webkit-backface-visibility: hidden; }
 
 /*# sourceMappingURL=style.css.map */

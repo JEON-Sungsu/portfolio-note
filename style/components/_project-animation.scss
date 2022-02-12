@@ -18,7 +18,7 @@
   .project-folder-back {
     width: 150px;
     height: 130px;
-    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
     transition: 1s;
     position: absolute;
 

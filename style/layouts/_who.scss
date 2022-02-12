@@ -1,0 +1,52 @@
+.who {
+  .index span {
+    left: 25px;
+  }
+  .left-side {
+    padding: 50px 70px;
+  }
+  .right-side {
+    padding: 50px 80px;
+  }
+
+  .coworker-title,
+  .career-title {
+    @include flexbox;
+    @include text-style-24;
+    margin-bottom: 40px;
+  }
+
+  .career-title {
+    margin-left: -80px;
+  }
+
+  .coworker-list {
+    .coworker-items {
+      @include flexbox(start);
+      @include text-style-19;
+      line-height: 1.5;
+      margin-bottom: 60px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      dt {
+        flex-shrink: 0;
+        margin-right: 15px;
+        width: 170px;
+        padding-bottom: 85px;
+      }
+    }
+  }
+
+  .career-image img {
+    display: block;
+    padding-left: 30px;
+  }
+
+  .spin-elements {
+    transform: rotatey(180deg);
+    -webkit-backface-visibility: hidden;
+  }
+}
