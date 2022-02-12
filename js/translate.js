@@ -9,9 +9,9 @@ shootEls.forEach(function (shootEl, index) {
   })
 })
 
-const fadeEls = document.querySelectorAll('.sticker-misc')
-fadeEls.forEach(function (fadeEl, index) {
-  gsap.to(fadeEl, 1, {
+const stickerEls = document.querySelectorAll('.sticker-misc')
+stickerEls.forEach(function (stickerEl, index) {
+  gsap.to(stickerEl, 1, {
     delay: 2.8,
     opacity: 1,
   })

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -9,7 +9,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
-    <title>Howard's Portfolio</title>
+    <title>How to Contact</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,9 +17,21 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"
+      integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollToPlugin.min.js"
+      integrity="sha512-1OG9UO4krPizjtz/c9iDbjCqtXznBYdJeD4ccPaYfJHzC6F1qoQ3P1bgQ3J8lgCoK5qGVCqsY4+/RKjLDzITVQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script defer src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
-    <script defer src="./js/draggable.js"></script>
+    <script defer src="./js/contact.js"></script>
     <script defer src="./main.js"></script>
   </head>
   <body>
@@ -59,7 +71,62 @@
           <span>Contact</span>
         </div>
       </header>
-      <section class="contact-content"></section>
+      <section class="contact-content content-area">
+        <div class="left-side">
+          <div class="last-speak">
+            <p>
+              소통능력이 뛰어난, 더불어 업무 능력도 뛰어난<br />
+              퍼블리셔가 되려고 노력합니다!! <br />
+              항상 발전하기 위하여 <br />
+              노력하겠습니다.<br />
+              언제든 연락주세요!!
+            </p>
+            <div class="thumb-sticker">
+              <img src="./assets/images/thumb.png" alt="엄지척 아이콘" aria-hidden />
+            </div>
+          </div>
+
+          <ul class="contact-list">
+            <li class="contact-items">
+              <div class="contact-icon-box">
+                <img src="./assets/images/email-big-icon.png" alt="e-mail icon" aria-hidden />
+              </div>
+              <a href="mailto:anagma@naver.com" target="_blank">anagma@naver.com</a>
+            </li>
+            <li class="contact-items">
+              <div class="contact-icon-box">
+                <img src="./assets/images/github-big-icon.png" alt="github icon" aria-hidden />
+              </div>
+              <a href="https://github.com/JEON-Sungsu" target="_blank">https://github.com/JEON-Sungsu/</a>
+            </li>
+            <li class="contact-items">
+              <div class="contact-icon-box">
+                <img src="./assets/images/telephone-big-icon.png" alt="telephone-icon" aria-hidden />
+              </div>
+              <span class="contact-digit">010-5054-6647</span>
+            </li>
+          </ul>
+        </div>
+        <div class="right-side">
+          <div class="good-bye-text">
+            <p>
+              Thank you <br />
+              For Watching<br />
+              My Portfolio!
+            </p>
+          </div>
+          <div class="good-bye">
+            <div class="text-wrap">
+              <p class="typing-text"></p>
+            </div>
+            <div class="good-bye-icon">
+              <img src="./assets/images/howard-cute.png" alt="하워드 얼굴 이모티콘" />
+            </div>
+            <p class="seeya">I Hope to See you Soon!</p>
+          </div>
+        </div>
+      </section>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   </body>
 </html>
