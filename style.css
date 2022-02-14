@@ -950,6 +950,8 @@ main:not(.detail-project) {
         padding-bottom: 49px; }
       .profile-content .text-wrap .text-items:nth-child(3) dt, .profile-content .text-wrap .text-items:nth-child(4) dt {
         padding-bottom: 24px; }
+  .profile-content .right-side .skill-stack {
+    padding-top: 40px; }
   .profile-content .right-side .skill-list {
     display: flex;
     justify-content: flex-start;

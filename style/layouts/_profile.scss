@@ -88,6 +88,10 @@
 
   /* RIGHT-Side */
   .right-side {
+    .skill-stack {
+      padding-top: 40px;
+    }
+
     .skill-list {
       @include flexbox(start, start);
       flex-direction: column;
